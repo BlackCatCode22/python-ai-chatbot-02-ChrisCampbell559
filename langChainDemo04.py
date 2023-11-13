@@ -26,4 +26,5 @@ async def main(message: str):
 
     #  await cl.Message(content = message.content).send()
     # await cl.Message(content=str(response)).send()
+    #>>chainlit run langChainDemo04.py
     await cl.Message(content=response["choices"][0]["message"]["content"]).send()
